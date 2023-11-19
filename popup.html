@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./popup.css" />
+    <title>Progress</title>
+    <style>
+      body {
+        min-width: 180px;
+        text-align: center;
+      }
+      #progress {
+        font-size: 24px;
+        line-height: 1.2;
+        display: none;
+      }
+      div {
+        min-height: 0;
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <p id="message">Loading....</p>
+    <p id="progress"></p>
+
+    <p id="details"></p>
+
+    <script src="./popup.js" type="module"></script>
+  </body>
+</html>
