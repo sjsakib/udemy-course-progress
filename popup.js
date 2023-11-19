@@ -41,7 +41,7 @@ async function collectProgress() {
     let min =
       lectureEl.querySelector('[class*="curriculum-item-link--bottom"]')?.innerText ?? '';
 
-    min = Number(min?.replace('min', ''));
+    min = Number(min?.replace(/\D+/, ''));
 
     if (isNaN(min)) continue;
 
