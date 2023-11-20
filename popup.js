@@ -88,7 +88,7 @@ async function main() {
 
   const { totalMin, completedMin } = result;
 
-  if (isNaN(totalMin) || isNaN(completedMin)) {
+  if (!totalMin) {
     throw new Error('Failed to collect progress');
   }
 
