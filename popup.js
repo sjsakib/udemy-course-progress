@@ -104,7 +104,7 @@ async function main() {
   detailsEl.style.display = 'block';
   detailsEl.innerHTML =
     `${formatMinutes(completedMin)} / ${formatMinutes(totalMin)} <br />` +
-    `1% ~ ${formatMinutes(totalMin / 100)} <br />`;
+    `1% ~ ${formatMinutes(Math.ceil(totalMin / 100))} <br />`;
 }
 
 main().catch(() => {

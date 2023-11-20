@@ -10,6 +10,5 @@
   "action": {
     "default_popup": "popup.html"
   },
-  "permissions": ["activeTab", "scripting", "tabs"],
-  "host_permissions": ["https://*.udemy.com/course/*"]
+  "permissions": ["activeTab", "scripting"]
 }
